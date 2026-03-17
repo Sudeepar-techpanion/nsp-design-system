@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "status-badge",
+  "type": "registry:component",
+  "title": "Status Badge",
+  "description": "A status indicator badge with success, warning, info, error, and default variants",
+  "registryDependencies": ["theme"],
+  "files": [
+    {
+      "path": "registry/components/status-badge.tsx",
+      "type": "registry:component",
+      "target": "src/components/status-badge.tsx"
+    }
+  ]
+}

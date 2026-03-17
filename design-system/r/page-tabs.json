@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "page-tabs",
+  "type": "registry:component",
+  "title": "Page Tabs",
+  "description": "Navigation tabs for page sections with active state indication",
+  "registryDependencies": ["theme"],
+  "dependencies": ["next"],
+  "files": [
+    {
+      "path": "registry/components/page-tabs.tsx",
+      "type": "registry:component",
+      "target": "src/components/page-tabs.tsx"
+    }
+  ]
+}

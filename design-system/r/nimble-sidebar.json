@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "nimble-sidebar",
+  "type": "registry:component",
+  "title": "Nimble Sidebar",
+  "description": "A collapsible sidebar navigation with hover expansion, purple branding, and icon support",
+  "registryDependencies": ["theme", "button"],
+  "dependencies": ["lucide-react", "next"],
+  "files": [
+    {
+      "path": "registry/components/nimble-sidebar.tsx",
+      "type": "registry:component",
+      "target": "src/components/nimble-sidebar.tsx"
+    }
+  ]
+}

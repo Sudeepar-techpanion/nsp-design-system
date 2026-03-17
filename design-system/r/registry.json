@@ -1,0 +1,320 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "Nimble S2P Design System",
+  "homepage": "https://your-registry-url.vercel.app",
+  "items": [
+    {
+      "name": "theme",
+      "type": "registry:theme",
+      "title": "Nimble S2P Theme",
+      "description": "A professional purple-themed design system for enterprise procurement applications with sidebar navigation and status indicators",
+      "cssVars": {
+        "light": {
+          "background": "oklch(0.985 0 0)",
+          "foreground": "oklch(0.145 0 0)",
+          "card": "oklch(1 0 0)",
+          "card-foreground": "oklch(0.145 0 0)",
+          "popover": "oklch(1 0 0)",
+          "popover-foreground": "oklch(0.145 0 0)",
+          "primary": "oklch(0.4 0.15 300)",
+          "primary-foreground": "oklch(1 0 0)",
+          "secondary": "oklch(0.97 0 0)",
+          "secondary-foreground": "oklch(0.205 0 0)",
+          "muted": "oklch(0.96 0 0)",
+          "muted-foreground": "oklch(0.45 0 0)",
+          "accent": "oklch(0.96 0.01 300)",
+          "accent-foreground": "oklch(0.35 0.15 300)",
+          "destructive": "oklch(0.577 0.245 27.325)",
+          "destructive-foreground": "oklch(1 0 0)",
+          "border": "oklch(0.9 0 0)",
+          "input": "oklch(0.9 0 0)",
+          "ring": "oklch(0.4 0.15 300)",
+          "chart-1": "oklch(0.55 0.2 145)",
+          "chart-2": "oklch(0.65 0.2 45)",
+          "chart-3": "oklch(0.5 0.15 260)",
+          "chart-4": "oklch(0.6 0.18 200)",
+          "chart-5": "oklch(0.7 0.15 80)",
+          "sidebar": "oklch(0.32 0.13 295)",
+          "sidebar-foreground": "oklch(1 0 0)",
+          "sidebar-primary": "oklch(1 0 0)",
+          "sidebar-primary-foreground": "oklch(0.32 0.13 295)",
+          "sidebar-accent": "oklch(0.38 0.13 295)",
+          "sidebar-accent-foreground": "oklch(1 0 0)",
+          "sidebar-border": "oklch(0.38 0.11 295)",
+          "sidebar-ring": "oklch(0.45 0.15 295)",
+          "success": "oklch(0.55 0.18 145)",
+          "success-foreground": "oklch(1 0 0)",
+          "warning": "oklch(0.7 0.18 60)",
+          "warning-foreground": "oklch(0.25 0 0)",
+          "info": "oklch(0.55 0.15 250)",
+          "info-foreground": "oklch(1 0 0)",
+          "radius": "0.5rem"
+        },
+        "dark": {
+          "background": "oklch(0.145 0 0)",
+          "foreground": "oklch(0.985 0 0)",
+          "card": "oklch(0.18 0 0)",
+          "card-foreground": "oklch(0.985 0 0)",
+          "popover": "oklch(0.18 0 0)",
+          "popover-foreground": "oklch(0.985 0 0)",
+          "primary": "oklch(0.55 0.15 300)",
+          "primary-foreground": "oklch(1 0 0)",
+          "secondary": "oklch(0.25 0 0)",
+          "secondary-foreground": "oklch(0.985 0 0)",
+          "muted": "oklch(0.25 0 0)",
+          "muted-foreground": "oklch(0.65 0 0)",
+          "accent": "oklch(0.3 0.08 300)",
+          "accent-foreground": "oklch(0.985 0 0)",
+          "destructive": "oklch(0.5 0.2 25)",
+          "destructive-foreground": "oklch(1 0 0)",
+          "border": "oklch(0.3 0 0)",
+          "input": "oklch(0.3 0 0)",
+          "ring": "oklch(0.55 0.15 300)",
+          "sidebar": "oklch(0.25 0.11 295)",
+          "sidebar-foreground": "oklch(0.985 0 0)",
+          "sidebar-primary": "oklch(0.55 0.15 295)",
+          "sidebar-primary-foreground": "oklch(1 0 0)",
+          "sidebar-accent": "oklch(0.32 0.11 295)",
+          "sidebar-accent-foreground": "oklch(0.985 0 0)",
+          "sidebar-border": "oklch(0.35 0.09 295)",
+          "sidebar-ring": "oklch(0.55 0.15 295)",
+          "success": "oklch(0.55 0.18 145)",
+          "success-foreground": "oklch(1 0 0)",
+          "warning": "oklch(0.7 0.18 60)",
+          "warning-foreground": "oklch(0.25 0 0)",
+          "info": "oklch(0.55 0.15 250)",
+          "info-foreground": "oklch(1 0 0)",
+          "radius": "0.5rem"
+        }
+      },
+      "dependencies": ["radix-ui"],
+      "files": [
+        {
+          "path": "registry/common/globals.css",
+          "type": "registry:style",
+          "target": "src/app/globals.css"
+        },
+        {
+          "path": "registry/common/postcss.config.mjs",
+          "type": "registry:file",
+          "target": "postcss.config.mjs"
+        },
+        {
+          "path": "registry/common/tsconfig.json",
+          "type": "registry:file",
+          "target": "tsconfig.json"
+        },
+        {
+          "path": "registry/common/package.json",
+          "type": "registry:file",
+          "target": "package.json"
+        },
+        {
+          "path": "registry/common/utils.ts",
+          "type": "registry:lib",
+          "target": "src/lib/utils.ts"
+        },
+        {
+          "path": "registry/common/use-mobile.ts",
+          "type": "registry:hook",
+          "target": "src/hooks/use-mobile.ts"
+        }
+      ]
+    },
+    {
+      "name": "nimble-sidebar",
+      "type": "registry:component",
+      "title": "Nimble Sidebar",
+      "description": "A collapsible sidebar navigation with hover expansion, purple branding, and icon support",
+      "registryDependencies": [
+        "theme",
+        "button"
+      ],
+      "dependencies": ["lucide-react", "next/link", "next/image", "next/navigation"],
+      "files": [
+        {
+          "path": "registry/components/nimble-sidebar.tsx",
+          "type": "registry:component",
+          "target": "src/components/nimble-sidebar.tsx"
+        }
+      ]
+    },
+    {
+      "name": "nimble-header",
+      "type": "registry:component",
+      "title": "Nimble Header",
+      "description": "Application header with notifications, user profile dropdown, and delegate access functionality",
+      "registryDependencies": [
+        "theme",
+        "button",
+        "avatar",
+        "dropdown-menu",
+        "dialog",
+        "input",
+        "checkbox",
+        "popover",
+        "calendar"
+      ],
+      "dependencies": ["lucide-react", "next/navigation", "date-fns"],
+      "files": [
+        {
+          "path": "registry/components/nimble-header.tsx",
+          "type": "registry:component",
+          "target": "src/components/nimble-header.tsx"
+        }
+      ]
+    },
+    {
+      "name": "status-badge",
+      "type": "registry:component",
+      "title": "Status Badge",
+      "description": "A status indicator badge with success, warning, info, error, and default variants",
+      "registryDependencies": ["theme"],
+      "files": [
+        {
+          "path": "registry/components/status-badge.tsx",
+          "type": "registry:component",
+          "target": "src/components/status-badge.tsx"
+        }
+      ]
+    },
+    {
+      "name": "stat-card",
+      "type": "registry:component",
+      "title": "Stat Card",
+      "description": "A statistics display card with icon, value, and optional breakdown items",
+      "registryDependencies": ["theme", "card"],
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "registry/components/stat-card.tsx",
+          "type": "registry:component",
+          "target": "src/components/stat-card.tsx"
+        }
+      ]
+    },
+    {
+      "name": "page-tabs",
+      "type": "registry:component",
+      "title": "Page Tabs",
+      "description": "Navigation tabs for page sections with active state indication",
+      "registryDependencies": ["theme"],
+      "dependencies": ["next/link", "next/navigation"],
+      "files": [
+        {
+          "path": "registry/components/page-tabs.tsx",
+          "type": "registry:component",
+          "target": "src/components/page-tabs.tsx"
+        }
+      ]
+    },
+    {
+      "name": "data-table",
+      "type": "registry:component",
+      "title": "Data Table",
+      "description": "A flexible data table with sorting, filtering, and pagination support",
+      "registryDependencies": ["theme", "table", "button", "input", "dropdown-menu"],
+      "dependencies": ["@tanstack/react-table", "lucide-react"],
+      "files": [
+        {
+          "path": "registry/components/data-table.tsx",
+          "type": "registry:component",
+          "target": "src/components/data-table.tsx"
+        }
+      ]
+    },
+    {
+      "name": "shell-layout",
+      "type": "registry:component",
+      "title": "Shell Layout",
+      "description": "Application shell layout with sidebar and header",
+      "registryDependencies": ["nimble-sidebar", "nimble-header"],
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "registry/layouts/shell-layout.tsx",
+          "type": "registry:component",
+          "target": "src/components/shell-layout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "blank",
+      "type": "registry:block",
+      "title": "Blank",
+      "description": "A blank Nimble S2P application with sidebar, header, and all brand components",
+      "registryDependencies": [
+        "theme",
+        "nimble-sidebar",
+        "nimble-header",
+        "status-badge",
+        "stat-card",
+        "page-tabs",
+        "button",
+        "card",
+        "input",
+        "badge",
+        "avatar",
+        "dialog",
+        "dropdown-menu",
+        "table",
+        "checkbox",
+        "select",
+        "tabs",
+        "popover",
+        "calendar",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "registry/layouts/shell-layout.tsx",
+          "type": "registry:file",
+          "target": "src/app/layout.tsx"
+        },
+        {
+          "path": "registry/blocks/blank-page.tsx",
+          "type": "registry:page",
+          "target": "src/app/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "dashboard",
+      "type": "registry:block",
+      "title": "Dashboard",
+      "description": "A procurement dashboard with stat cards, tables, and navigation",
+      "registryDependencies": [
+        "theme",
+        "nimble-sidebar",
+        "nimble-header",
+        "status-badge",
+        "stat-card",
+        "page-tabs",
+        "data-table",
+        "button",
+        "card",
+        "input",
+        "badge",
+        "avatar",
+        "dialog",
+        "dropdown-menu",
+        "table",
+        "checkbox",
+        "select",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "registry/layouts/shell-layout.tsx",
+          "type": "registry:file",
+          "target": "src/app/layout.tsx"
+        },
+        {
+          "path": "registry/blocks/dashboard-page.tsx",
+          "type": "registry:page",
+          "target": "src/app/page.tsx"
+        }
+      ]
+    }
+  ]
+}

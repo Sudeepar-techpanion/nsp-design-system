@@ -1,0 +1,42 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "blank",
+  "type": "registry:block",
+  "title": "Blank",
+  "description": "A blank Nimble S2P application with sidebar, header, and all brand components",
+  "registryDependencies": [
+    "theme",
+    "nimble-sidebar",
+    "nimble-header",
+    "status-badge",
+    "stat-card",
+    "page-tabs",
+    "button",
+    "card",
+    "input",
+    "badge",
+    "avatar",
+    "dialog",
+    "dropdown-menu",
+    "table",
+    "checkbox",
+    "select",
+    "tabs",
+    "popover",
+    "calendar",
+    "tooltip",
+    "sonner"
+  ],
+  "files": [
+    {
+      "path": "registry/layouts/shell-layout.tsx",
+      "type": "registry:file",
+      "target": "src/app/layout.tsx"
+    },
+    {
+      "path": "registry/blocks/blank-page.tsx",
+      "type": "registry:page",
+      "target": "src/app/page.tsx"
+    }
+  ]
+}

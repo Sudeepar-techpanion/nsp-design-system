@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "name": "shell-layout",
+  "type": "registry:component",
+  "title": "Shell Layout",
+  "description": "Application shell layout with sidebar and header",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["nimble-sidebar", "nimble-header"],
+  "files": [
+    {
+      "path": "components/shell-layout.tsx",
+      "type": "registry:component",
+      "content": "\"use client\"\n\nimport { NimbleSidebar } from \"@/components/nimble-sidebar\"\nimport { NimbleHeader } from \"@/components/nimble-header\"\n\ninterface ShellLayoutProps {\n  children: React.ReactNode\n  currentPath?: string\n  pageTitle?: string\n}\n\nexport function ShellLayout({ children, currentPath = \"/\", pageTitle = \"Dashboard\" }: ShellLayoutProps) {\n  return (\n    <div className=\"flex h-screen bg-background\">\n      <NimbleSidebar currentPath={currentPath} />\n      <div className=\"flex-1 flex flex-col overflow-hidden\">\n        <NimbleHeader pageTitle={pageTitle} />\n        <main className=\"flex-1 overflow-auto p-6\">\n          {children}\n        </main>\n      </div>\n    </div>\n  )\n}"
+    }
+  ]
+}

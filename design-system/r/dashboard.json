@@ -1,0 +1,43 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dashboard",
+  "type": "registry:block",
+  "title": "Dashboard",
+  "description": "A procurement dashboard with stat cards, tables, and navigation",
+  "registryDependencies": [
+    "theme",
+    "nimble-sidebar",
+    "nimble-header",
+    "status-badge",
+    "stat-card",
+    "page-tabs",
+    "data-table",
+    "button",
+    "card",
+    "input",
+    "badge",
+    "avatar",
+    "dialog",
+    "dropdown-menu",
+    "table",
+    "checkbox",
+    "select",
+    "tabs",
+    "popover",
+    "calendar",
+    "tooltip",
+    "sonner"
+  ],
+  "files": [
+    {
+      "path": "registry/layouts/shell-layout.tsx",
+      "type": "registry:file",
+      "target": "src/app/layout.tsx"
+    },
+    {
+      "path": "registry/blocks/dashboard-page.tsx",
+      "type": "registry:page",
+      "target": "src/app/page.tsx"
+    }
+  ]
+}

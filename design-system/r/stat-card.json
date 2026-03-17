@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "stat-card",
+  "type": "registry:component",
+  "title": "Stat Card",
+  "description": "A statistics display card with icon, value, and optional breakdown items",
+  "registryDependencies": ["theme", "card"],
+  "dependencies": ["lucide-react"],
+  "files": [
+    {
+      "path": "registry/components/stat-card.tsx",
+      "type": "registry:component",
+      "target": "src/components/stat-card.tsx"
+    }
+  ]
+}

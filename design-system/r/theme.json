@@ -1,0 +1,119 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme",
+  "type": "registry:theme",
+  "title": "Nimble S2P Theme",
+  "description": "A professional purple-themed design system for enterprise procurement applications",
+  "cssVars": {
+    "light": {
+      "background": "oklch(0.985 0 0)",
+      "foreground": "oklch(0.145 0 0)",
+      "card": "oklch(1 0 0)",
+      "card-foreground": "oklch(0.145 0 0)",
+      "popover": "oklch(1 0 0)",
+      "popover-foreground": "oklch(0.145 0 0)",
+      "primary": "oklch(0.4 0.15 300)",
+      "primary-foreground": "oklch(1 0 0)",
+      "secondary": "oklch(0.97 0 0)",
+      "secondary-foreground": "oklch(0.205 0 0)",
+      "muted": "oklch(0.96 0 0)",
+      "muted-foreground": "oklch(0.45 0 0)",
+      "accent": "oklch(0.96 0.01 300)",
+      "accent-foreground": "oklch(0.35 0.15 300)",
+      "destructive": "oklch(0.577 0.245 27.325)",
+      "destructive-foreground": "oklch(1 0 0)",
+      "border": "oklch(0.9 0 0)",
+      "input": "oklch(0.9 0 0)",
+      "ring": "oklch(0.4 0.15 300)",
+      "chart-1": "oklch(0.55 0.2 145)",
+      "chart-2": "oklch(0.65 0.2 45)",
+      "chart-3": "oklch(0.5 0.15 260)",
+      "chart-4": "oklch(0.6 0.18 200)",
+      "chart-5": "oklch(0.7 0.15 80)",
+      "sidebar": "oklch(0.32 0.13 295)",
+      "sidebar-foreground": "oklch(1 0 0)",
+      "sidebar-primary": "oklch(1 0 0)",
+      "sidebar-primary-foreground": "oklch(0.32 0.13 295)",
+      "sidebar-accent": "oklch(0.38 0.13 295)",
+      "sidebar-accent-foreground": "oklch(1 0 0)",
+      "sidebar-border": "oklch(0.38 0.11 295)",
+      "sidebar-ring": "oklch(0.45 0.15 295)",
+      "success": "oklch(0.55 0.18 145)",
+      "success-foreground": "oklch(1 0 0)",
+      "warning": "oklch(0.7 0.18 60)",
+      "warning-foreground": "oklch(0.25 0 0)",
+      "info": "oklch(0.55 0.15 250)",
+      "info-foreground": "oklch(1 0 0)",
+      "radius": "0.5rem"
+    },
+    "dark": {
+      "background": "oklch(0.145 0 0)",
+      "foreground": "oklch(0.985 0 0)",
+      "card": "oklch(0.18 0 0)",
+      "card-foreground": "oklch(0.985 0 0)",
+      "popover": "oklch(0.18 0 0)",
+      "popover-foreground": "oklch(0.985 0 0)",
+      "primary": "oklch(0.55 0.15 300)",
+      "primary-foreground": "oklch(1 0 0)",
+      "secondary": "oklch(0.25 0 0)",
+      "secondary-foreground": "oklch(0.985 0 0)",
+      "muted": "oklch(0.25 0 0)",
+      "muted-foreground": "oklch(0.65 0 0)",
+      "accent": "oklch(0.3 0.08 300)",
+      "accent-foreground": "oklch(0.985 0 0)",
+      "destructive": "oklch(0.5 0.2 25)",
+      "destructive-foreground": "oklch(1 0 0)",
+      "border": "oklch(0.3 0 0)",
+      "input": "oklch(0.3 0 0)",
+      "ring": "oklch(0.55 0.15 300)",
+      "sidebar": "oklch(0.25 0.11 295)",
+      "sidebar-foreground": "oklch(0.985 0 0)",
+      "sidebar-primary": "oklch(0.55 0.15 295)",
+      "sidebar-primary-foreground": "oklch(1 0 0)",
+      "sidebar-accent": "oklch(0.32 0.11 295)",
+      "sidebar-accent-foreground": "oklch(0.985 0 0)",
+      "sidebar-border": "oklch(0.35 0.09 295)",
+      "sidebar-ring": "oklch(0.55 0.15 295)",
+      "success": "oklch(0.55 0.18 145)",
+      "success-foreground": "oklch(1 0 0)",
+      "warning": "oklch(0.7 0.18 60)",
+      "warning-foreground": "oklch(0.25 0 0)",
+      "info": "oklch(0.55 0.15 250)",
+      "info-foreground": "oklch(1 0 0)",
+      "radius": "0.5rem"
+    }
+  },
+  "dependencies": ["radix-ui"],
+  "files": [
+    {
+      "path": "registry/common/globals.css",
+      "type": "registry:style",
+      "target": "src/app/globals.css"
+    },
+    {
+      "path": "registry/common/postcss.config.mjs",
+      "type": "registry:file",
+      "target": "postcss.config.mjs"
+    },
+    {
+      "path": "registry/common/tsconfig.json",
+      "type": "registry:file",
+      "target": "tsconfig.json"
+    },
+    {
+      "path": "registry/common/package.json",
+      "type": "registry:file",
+      "target": "package.json"
+    },
+    {
+      "path": "registry/common/utils.ts",
+      "type": "registry:lib",
+      "target": "src/lib/utils.ts"
+    },
+    {
+      "path": "registry/common/use-mobile.ts",
+      "type": "registry:hook",
+      "target": "src/hooks/use-mobile.ts"
+    }
+  ]
+}

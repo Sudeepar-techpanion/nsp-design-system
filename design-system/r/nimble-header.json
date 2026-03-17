@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "nimble-header",
+  "type": "registry:component",
+  "title": "Nimble Header",
+  "description": "Application header with notifications, user profile dropdown, and delegate access functionality",
+  "registryDependencies": [
+    "theme",
+    "button",
+    "avatar",
+    "dropdown-menu",
+    "dialog",
+    "input",
+    "label",
+    "checkbox",
+    "popover",
+    "calendar"
+  ],
+  "dependencies": ["lucide-react", "next", "date-fns"],
+  "files": [
+    {
+      "path": "registry/components/nimble-header.tsx",
+      "type": "registry:component",
+      "target": "src/components/nimble-header.tsx"
+    }
+  ]
+}
