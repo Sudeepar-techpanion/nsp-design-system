@@ -84,8 +84,6 @@ import {
   X,
   Filter,
   ListFilter,
-  Send,
-  Mail,
   Cloud,
   Database,
   Globe,
